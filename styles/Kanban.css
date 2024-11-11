@@ -1,0 +1,84 @@
+.kanban-board {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  flex-wrap: wrap; /* Allows the columns to wrap onto a new line */
+}
+
+.kanban-column {
+  flex: 1 1 30%; /* Allow each column to take up 30% of the container */
+  max-width: 33.33%; /* Ensure each column does not exceed one-third of the container width */
+  min-width: 240px; /* Ensure columns don't get too small */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  font-weight: bold;
+  max-width: 300px;
+  font-size: 14px;
+  border-radius: 8px 8px 0 0;
+}
+
+.column-title {
+  color: #333333;
+}
+
+.task-count {
+  font-size: 14px;
+  color: #666666;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.task-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-id {
+  font-size: 14px;
+  color: #999999;
+}
+
+.task-title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.task-label {
+  font-size: 14px;
+  color: #666666;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .kanban-column {
+    flex: 1 1 45%; 
+    max-width: 50%; 
+  }
+}
+
+@media (max-width: 600px) {
+  .kanban-column {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Dropdown.css';
-import displayIcon from '../icons_FEtask/Display.svg';
-import downIcon from '../icons_FEtask/down.svg';
+import displayIcon from '/icons_FEtask/Display.svg';
+import downIcon from '/icons_FEtask/down.svg';
 import OptionsSelector from './OptionsSelector';
 
 function Dropdown({ setDisplay, display }) {
@@ -28,7 +28,7 @@ function Dropdown({ setDisplay, display }) {
                   title="grouping" 
                   setDisplay={setDisplay} 
                   options={["status", "user", "priority"]} 
-                  display={display} // Pass display state to OptionsSelector
+                  display={display} 
                 />
               </div>
               <div style={{ display: "flex", justifyContent: "space-between", padding: "0px 12px", width: "100%" }}>
@@ -37,7 +37,7 @@ function Dropdown({ setDisplay, display }) {
                   title="ordering" 
                   setDisplay={setDisplay} 
                   options={["priority", "title"]} 
-                  display={display} // Pass display state to OptionsSelector
+                  display={display} 
                 />
               </div>
             </div>

@@ -2,13 +2,12 @@
   display: flex;
   gap: 8px;
   width: 100%;
-  flex-wrap: wrap; /* Allows the columns to wrap onto a new line */
+  flex-wrap: wrap; 
 }
-
 .kanban-column {
-  flex: 1 1 30%; /* Allow each column to take up 30% of the container */
-  max-width: 33.33%; /* Ensure each column does not exceed one-third of the container width */
-  min-width: 240px; /* Ensure columns don't get too small */
+  flex: 1 1 30%; 
+  max-width: 33.33%; 
+  min-width: 240px; 
   border-radius: 8px;
   display: flex;
   flex-direction: column;

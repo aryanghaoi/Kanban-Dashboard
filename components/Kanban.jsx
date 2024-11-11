@@ -76,12 +76,12 @@ const Kanban = () => {
                   <img src={"https://i.pravatar.cc/100"} alt="User" className="profile-pic" />
                 ) : display.grouping === "priority" ? (
                   <img
-                    src={"../icons_FEtask/" + prioritySvgs[groupKey]}
+                    src={"/icons_FEtask/" + prioritySvgs[groupKey]}
                     alt={groupKey + " icon"}
                   />
                 ) : (
                   <img
-                    src={"../icons_FEtask/" + svgs[["Todo", "In progress", "Done", "Cancelled", "Backlog"].indexOf(groupKey)] + ".svg"}
+                    src={"/icons_FEtask/" + svgs[["Todo", "In progress", "Done", "Cancelled", "Backlog"].indexOf(groupKey)] + ".svg"}
                     alt={groupKey + " icon"}
                   />
                 )}
@@ -94,8 +94,8 @@ const Kanban = () => {
                 <span className="task-count">{groupedTasks[groupKey].length}</span>
               </div>
               <div style={{ display: "flex", gap: "4px" }}>
-                <img src="../icons_FEtask/add.svg" alt="Add icon" />
-                <img src="../icons_FEtask/3 dot menu.svg" alt="Menu icon" />
+                <img src="/icons_FEtask/add.svg" alt="Add icon" />
+                <img src="/icons_FEtask/3 dot menu.svg" alt="Menu icon" />
               </div>
             </div>
             <div className="task-list">
